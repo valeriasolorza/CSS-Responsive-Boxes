@@ -1,3 +1,66 @@
 body {
   background: peachpuff;
+  padding: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+nav {
+  background-color: lightgray;
+  width: 100%;
+}
+
+.six-box {
+  background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+}
+
+.b,
+.c,
+.d,
+.e,
+.f,
+.g {
+  flex-grow: 1;
+}
+
+footer {
+  flex-grow: 1;
+  background-color: gray;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h {
+  border: 2px solid black;
+  margin: 2px;
+}
+
+/* big screen */
+@media screen and (min-width: 600px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
 }

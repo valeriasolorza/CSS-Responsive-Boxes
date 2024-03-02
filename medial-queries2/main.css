@@ -1,3 +1,67 @@
 body {
   background: papayawhip;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: lightgray;
+}
+
+.a {
+  width: 100%;
+}
+
+.blue-box {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-grow: 2;
+  flex-wrap: wrap;
+}
+
+.b {
+  flex-basis: 100%; 
+  background-color: lightpink;
+}
+
+.c,
+.d,
+.e {
+  flex-grow: 1; /* Evenly space them */
+  background-color: lightblue;
+}
+
+footer {
+  background-color: green;
+  flex-grow: 1;
+}
+.f {
+  background-color: gray;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f {
+  border: 2px solid black;
+  margin: 2px;
+}
+
+/* big screen */
+@media screen and (min-width: 600px) {
+  .blue-box{
+    flex-direction: row;
+  }
 }
